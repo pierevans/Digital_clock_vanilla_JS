@@ -1,0 +1,61 @@
+//*Fonts*//
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+//*variables*//
+
+//! Font-Family
+$primary-font-family: "Orbitron";
+//! color
+
+//*Functions*//
+
+//! mixin
+@mixin flex($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+//* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dfdff5;
+  font-family: $primary-font-family;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  height: 100vh;
+  @include flex(center);
+}
+
+//*Styling*/
+
+
+.clock {
+    @include flex(center);
+    flex-direction: column;
+    width: 600px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 20px 20px 70px -10px inset,
+    rgba(0, 0, 0, 0.3) 10px 10px 25px;
+    border: rgb(88, 17, 17) 10px solid ;
+    padding: 20px;
+        .date {
+            font-size: 20px;
+            align-self: flex-end;
+        }
+        
+        .time {
+            font-size: 70px;
+            padding: 0 0 20px 0;
+            
+    }
+
+}
