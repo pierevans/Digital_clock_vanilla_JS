@@ -98,3 +98,26 @@ function getDayInitial() {
   }
 }
 
+let fullDate = `${getDayName()}, ${getMonth()} ${day}${getDayInitial()}, ${year}`;
+
+let clockDate = document.querySelector(".date");
+clockDate.innerText = fullDate;
+
+// Clock functionality
+let clockFunc = () => {
+  let date = new Date();
+  let hours = date.getHours();
+  let minutes = date.getMinutes().toString().padStart(2, 0);
+  let seconds = date.getSeconds().toString().padStart(2, 0);
+
+  let getHours = (hours % 12 || 12).toString().padStart(2, "0");
+  let getHoursInitial = hours > 11 ? "PM" : "AM";
+
+  let fullTime = `${getHours} : ${minutes} : ${seconds} ${getHoursInitial}`;
+  let clockTime = document.querySelector(".time");
+  clockTime.innerText = fullTime;
+};
+
+clockFunc();
+
+setInterval(clockFunc, 1000);
