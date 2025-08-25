@@ -27,7 +27,7 @@ body {
   background-color: aliceblue;
   border-radius: 50px;
   box-shadow: rgba(50, 50, 93, 0.25) 20px 20px 70px -10px inset, rgba(0, 0, 0, 0.3) 10px 10px 25px;
-  border: rgb(88, 17, 17) 10px solid;
+  border: rgb(88, 17, 17) 15px solid;
   padding: 20px;
 }
 .clock .date {
@@ -35,6 +35,6 @@ body {
   align-self: flex-end;
 }
 .clock .time {
-  font-size: 70px;
+  font-size: 50px;
   padding: 0 0 20px 0;
 }/*# sourceMappingURL=styles.css.map */

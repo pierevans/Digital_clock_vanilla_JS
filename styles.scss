@@ -35,27 +35,24 @@ body {
 
 //*Styling*/
 
-
 .clock {
-    @include flex(center);
-    flex-direction: column;
-    width: 600px;
-    height: 200px;
-    background-color: aliceblue;
-    border-radius: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 20px 20px 70px -10px inset,
+  @include flex(center);
+  flex-direction: column;
+  width: 600px;
+  height: 200px;
+  background-color: aliceblue;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 20px 20px 70px -10px inset,
     rgba(0, 0, 0, 0.3) 10px 10px 25px;
-    border: rgb(88, 17, 17) 10px solid ;
-    padding: 20px;
-        .date {
-            font-size: 20px;
-            align-self: flex-end;
-        }
-        
-        .time {
-            font-size: 70px;
-            padding: 0 0 20px 0;
-            
-    }
+  border: rgb(88, 17, 17) 15px solid;
+  padding: 20px;
+  .date {
+    font-size: 20px;
+    align-self: flex-end;
+  }
 
+  .time {
+    font-size: 50px;
+    padding: 0 0 20px 0;
+  }
 }
